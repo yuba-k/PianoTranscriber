@@ -1,9 +1,10 @@
-import librosa
-from librosa import display
-import matplotlib.pyplot as plt
 import os
 import wave
+
+import librosa
 import numpy as np
+from librosa import display
+
 
 class Scale_Identification():
     def __init__(self):
