@@ -4,7 +4,7 @@ This project uses the following third-party libraries, each with its own license
 
 ## 1. librosa
 - **License** : ISC License
-- **Copyright** : 2013--2023, librosa development team.
+- **Copyright** : Copyright (c) 2013--2023, librosa development team.
 - **License Text** :
 
 Copyright (c) 2013--2023, librosa development team.
@@ -15,7 +15,8 @@ THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH RE
 
 ## 2. numpy
 - **License** : BSD License
-- **Copyright** : 2005-2024, NumPy Developers.
+- **Copyright** : Copyright (c) 2005-2024, NumPy Developers.
+All rights reserved.
 - **License Text** :
 Copyright (c) 2005-2024, NumPy Developers.
 All rights reserved.
@@ -50,7 +51,7 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 ## 3. Python
 - **License** : PSF License
-- **Copyright** : 2001-2023 Python Software Foundation. All rights reserved.
+- **Copyright** : Copyright (c) 2001-2023 Python Software Foundation. All rights reserved.
 - **License Text** :
 1. This LICENSE AGREEMENT is between the Python Software Foundation ("PSF"), and
    the Individual or Organization ("Licensee") accessing and otherwise using Python
