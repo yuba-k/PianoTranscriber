@@ -52,7 +52,7 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 ## noisereduce
 - **License** : MIT License
 - **Copyryght** : Copyright (c) 2019, Tim Sainburg
-- ** License Text** :
+- **License Text** :
 
 The MIT License (MIT)
 Copyright (c) 2019, Tim Sainburg
