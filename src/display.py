@@ -11,6 +11,9 @@ class Display():
         self.root.geometry("600x400")
         self.root.resizable(False, False)
         ctypes.windll.shcore.SetProcessDpiAwareness(1)
+
+        self.style = ttk.Style()
+        self.style.theme_use('winnative')
     def display(self):
         menubar = tk.Menu(self.root)
         self.filemenu = tk.Menu(menubar, tearoff=0)
@@ -20,14 +23,22 @@ class Display():
         menubar.add_cascade(label="FILE", menu=self.filemenu)
         self.root.config(menu=menubar)
 
-        ttk.Label(text="Easily convert wav files to midi files",font=("",20)).pack()
+        ttk.Label(text="Easily convert wav files to midi files",font=("",25)).pack(pady=10)
 
-        ttk.Button(text="File Selection",command=self.selection).pack()
+        self.style.configure("My.TButton",font=("",30))
+        ttk.Button(self.root,text="File Selection",style="My.TButton",command=lambda:self.selection(convert)).pack(pady=50)
+
+        self.style.configure("CONVERT.TButton",font=("",20))
+        convert = ttk.Button(self.root,text="CONVERT",style="CONVERT.TButton",state="disable",command=lambda:self.stconvert(convert))
+        convert.pack(pady=20)
     def menu_command(self):
         print("menu_command")
-    def selection(self):
+    def selection(self,convert):
         fTyp = [("wav-file", ".wav")]
         self.file_name = filedialog.askopenfilename(filetypes=fTyp)
+        convert.config(state="normal")
+    def stconvert(self,convert):
+        convert.config(state="disable")
 
         
 def main():
